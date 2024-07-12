@@ -1,21 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CONTACT PAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
   </head>
   <body>
     <header>
-      <img class="logo" src="./images/logo.webp" alt="logo" />
+      <a href="/"><img class="logo" src="./images/logo.webp" alt="logo" /></a>
+      <nav>
+        <a href="news.html" target="_blank">News</a>
+        <a href="gallery.html" target="_blank">Gallery</a>
+        <a href="contact.html" target="_blank">Contact</a>
+      </nav>
     </header>
 
     <main>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-      corporis, dolorem vel similique omnis eaque fugiat harum soluta cumque,
-      non ex quisquam nesciunt fugit rem voluptate asperiores adipisci? Minima,
-      aspernatur.
+      <div class="contact-us-container">
+        <div class="contact-us-main">
+          <div>
+            <h1>Contact Us</h1>
+            <p>
+              We would love to hear from you! Please use the form below to get
+              in touch with us.
+            </p>
+          </div>
+
+          <section>
+            <h2>Our Contact Information</h2>
+            <p>Email: info@pawsandstyle.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 1234 Doggo Lane, Pet City, PA 12345</p>
+          </section>
+
+          <section>
+            <h2>Contact Form</h2>
+            <form action="/submit_contact" method="post">
+              <label for="name">Name:</label><br />
+              <input type="text" id="name" name="name" required /><br /><br />
+
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              /><br /><br />
+
+              <label for="message">Message:</label><br />
+              <textarea id="message" name="message" rows="4" required></textarea
+              ><br /><br />
+
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8356373709055!2d144.96328031591252!3d-37.8136289808796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%253A0x5045675218ce6e41!2sMelbourne+VIC%252C+Australia!5e0!3m2!1sen!2sus!4v1508078861959"
+          width="100%"
+          height="250"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen
+        ></iframe>
+      </div>
     </main>
   </body>
 </html>

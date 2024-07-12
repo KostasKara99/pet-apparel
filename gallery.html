@@ -1,20 +1,158 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <title>Paws & Style</title>
   </head>
+
   <body>
     <header>
-      <img class="logo" src="./images/logo.webp" alt="logo" />
+      <a href="/"><img class="logo" src="./images/logo.webp" alt="logo" /></a>
+      <nav>
+        <a href="news.html" target="_blank">News</a>
+        <a href="gallery.html" target="_blank">Gallery</a>
+        <a href="contact.html" target="_blank">Contact</a>
+      </nav>
     </header>
-    <main>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis illum
-      temporibus quae, dolore vitae at tenetur, consequatur provident unde
-      facilis, eveniet placeat laudantium iure ratione possimus. Ducimus
-      incidunt corporis aut!
-    </main>
+
+    <section class="image-section">
+      <h3>Our apparel</h3>
+      <div class="image-container">
+        <a
+          href="images/ninja.webp"
+          data-lightbox="example-set"
+          data-title="Ninja costume"
+        >
+          <img src="images/ninja.webp" width="200" alt="" />
+        </a>
+
+        <a
+          href="images/gold_hat_lab.webp"
+          data-lightbox="example-set"
+          data-title="Gold hat and chain"
+        >
+          <img src="images/gold_hat_lab.webp" width="200" alt="" />
+        </a>
+
+        <a
+          href="images/wife_beater.webp"
+          data-lightbox="example-set"
+          data-title="Black wife beater"
+        >
+          <img src="images/wife_beater.webp" width="200" alt="" />
+        </a>
+        <a
+          href="images/chow_chow_hat.webp"
+          data-lightbox="example-set"
+          data-title="Hip hop hat"
+        >
+          <img src="images/chow_chow_hat.webp" width="200" alt="" />
+        </a>
+        <a
+          href="images/hermano.webp"
+          data-lightbox="example-set"
+          data-title="Sombrero and mexican attire"
+        >
+          <img
+            onclick="document.getElementById('sound').play();"
+            src="images/hermano.webp"
+            width="200"
+            alt=""
+          />
+        </a>
+        <a
+          href="images/nigerian_outfit.webp"
+          data-lightbox="example-set"
+          data-title="Nigerian outfit"
+        >
+          <img src="images/nigerian_outfit.webp" width="200" alt="" />
+        </a>
+        <a
+          href="images/indian_saint_bernard.webp"
+          data-lightbox="example-set"
+          data-title="Indian outfit"
+        >
+          <img src="images/indian_saint_bernard.webp" width="200" alt="" />
+        </a>
+
+        <a
+          href="images/clean_dog.webp"
+          data-lightbox="example-set"
+          data-title="Bath robe"
+        >
+          <img src="images/clean_dog.webp" width="200" alt="" />
+        </a>
+
+        <a
+          href="images/sleepy_rotty.webp"
+          data-lightbox="example-set"
+          data-title="Blue pyjamas"
+        >
+          <img src="images/sleepy_rotty.webp" width="200" alt="" />
+        </a>
+        <a
+          href="images/aditi_dog.webp"
+          data-lightbox="example-set"
+          data-title="Indian female outfit"
+        >
+          <img src="images/aditi_dog.webp" width="200" alt="" />
+        </a>
+        <a
+          href="images/pink_pyjamas.webp"
+          data-lightbox="example-set"
+          data-title="Pink pyjamas"
+        >
+          <img src="images/pink_pyjamas.webp" width="200" alt="" />
+        </a>
+
+        <a
+          href="images/business_doggy.webp"
+          data-lightbox="example-set"
+          data-title="Armani suit"
+        >
+          <img src="images/business_doggy.webp" width="200" alt="" />
+        </a>
+        <a
+          href="images/snoop_dog.webp"
+          data-lightbox="example-set"
+          data-title="Hoodie and sneakers"
+        >
+          <img src="images/snoop_dog.webp" width="200" alt="" />
+        </a>
+
+        <a
+          href="images/workout_dog.webp"
+          data-lightbox="example-set"
+          data-title="Headband"
+        >
+          <img src="images/workout_dog.webp" width="200" alt="" />
+        </a>
+        <a
+          href="images/batdog.webp"
+          data-lightbox="example-set"
+          data-title="Batman costume"
+        >
+          <img src="images/batdog.webp" width="200" alt="" />
+        </a>
+        <a
+          href="images/beanie_dog.webp"
+          data-lightbox="example-set"
+          data-title="Winter beanie"
+        >
+          <img src="images/beanie_dog.webp" width="200" alt="" />
+        </a>
+      </div>
+    </section>
+    <audio id="sound" src="hat_dance.mp3" preload="auto"></audio>
+
+    <script src="js/lightbox-plus-jquery.min.js"></script>
   </body>
 </html>

@@ -43,13 +43,13 @@ html {
 body {
   background-color: rgb(15 23 42);
   color: rgb(226, 232, 240);
-  height: 100%;
   display: flex;
+  min-height: 100%;
   flex-direction: column;
 }
 
-/* 
-Gamata transitions pou vrika sto 
+/*
+Gamata transitions pou vrika sto
 https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
 a::before {
   content: "";
@@ -69,6 +69,7 @@ a:hover::before {
 }
 
 header {
+  z-index: 1;
   position: sticky;
   top: 0;
   backdrop-filter: blur(10px);
@@ -94,6 +95,16 @@ main {
   gap: 2rem;
   background-image: url("./images/bg.avif");
   background-size: 100% 100%;
+  min-height: 100vh;
+}
+
+main.grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid .card {
+  width: auto;
 }
 
 .logo {
@@ -121,10 +132,21 @@ main {
   transition: transform 0.2s;
 }
 
+.grid .card {
+  align-items: flex-start;
+}
+
 .card-text {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  height: 100%;
+}
+
+.read-more {
+  align-self: flex-end;
+  cursor: pointer;
+  margin-top: auto;
 }
 
 .card-image {
@@ -181,10 +203,76 @@ footer {
   border-top-style: solid;
 }
 
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 1.2rem;
+}
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+.image-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container img {
+  border-radius: 1rem;
+}
+
+.contact-us-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.contact-us-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-us-main form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.contact-us-main form input,
+textarea {
+  width: 50%;
+}
+
+.contact-us-main form button {
+  width: 10rem;
+  background-color: rgb(14 165 233);
+  border-style: none;
+  color: white;
+  padding: 0.4rem 2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 700px) {
   main {
     padding: 3rem;
     gap: 8rem;
+  }
+
+  main.grid {
+    width: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   header {
@@ -228,5 +316,16 @@ footer {
   .contact {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .contact-us-main form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    align-items: flex-start;
+  }
+
+  .contact-us-container {
+    flex-direction: row;
   }
 }

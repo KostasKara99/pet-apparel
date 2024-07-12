@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>News Page</title>
   </head>
   <body>
     <header>
-      <img class="logo" src="./images/logo.webp" alt="logo" />
+      <a href="/"><img class="logo" src="./images/logo.webp" alt="logo" /></a>
+      <nav>
+        <a href="news.html" target="_blank">News</a>
+        <a href="gallery.html" target="_blank">Gallery</a>
+        <a href="contact.html" target="_blank">Contact</a>
+      </nav>
     </header>
-    <main>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis illum
-      temporibus quae, dolore vitae at tenetur, consequatur provident unde
-      facilis, eveniet placeat laudantium iure ratione possimus. Ducimus
-      incidunt corporis aut!
+    <main class="grid">
+      <div class="card">
+        <div class="card-text">
+          <h1>Stylish and Functional: The Rise of Dog Hoodies</h1>
+          <p>
+            Dog clothing has come a long way from its early days of simple
+            sweaters and raincoats. Among the most popular pieces today is the
+            dog hoodie, a stylish and functional garment that caters to both
+            fashion-forward pet owners and their beloved canine companions.
+          </p>
+          <a href="article.html" target="_blank" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <h1>The Versatile Charm of Dog Bandanas</h1>
+          <p>
+            Dog bandanas have become a beloved accessory among pet owners,
+            adding a touch of personality and flair to any dog's appearance.
+            Simple yet stylish, these pieces of dog clothing are versatile,
+            practical, and perfect for any occasion.
+          </p>
+          <a class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <h1>The Cozy Appeal of Dog Sweaters</h1>
+          <p>
+            Dog sweaters have become an essential part of many pet owners'
+            wardrobes, combining warmth, comfort, and style. These versatile
+            garments are perfect for keeping dogs cozy during colder months and
+            adding a fashionable touch to their everyday look.
+          </p>
+          <a class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-text">
+          <h1>The All-Weather Versatility of Dog Raincoats</h1>
+          <p>
+            Dog raincoats are an essential accessory for pet owners who want to
+            keep their furry friends dry and comfortable during rainy days.
+            Combining practicality with style, these garments ensure that dogs
+            can enjoy their walks regardless of the weather.
+          </p>
+          <a class="read-more">Read More</a>
+        </div>
+      </div>
     </main>
   </body>
 </html>
